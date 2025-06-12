@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App By JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="pageContent">
+    <div class="container">
+      <div class="header">
+        <h1>Vishi-Weather</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search location..." id="searchInput">
+          <button id="searchButton"></button>
+        </div>
+      </div>
+      <div class="main-weather">
+        <div class="current-weather">
+          <img id="weatherIcon" src="http://openweathermap.org/img/wn/50d@2x.png" alt="">
+          <h2 id="temp">0 °C </h2>
+          <p id="type">Weather:</p>
+        </div>
+        <div class="location">
+          <h2 id="location">City: </h2>
+          <p id="feels">Feels Like: - °C</p>
+          <p id="max">Day Max: - °C </p>
+          <p id="min">Day Min: - °C </p>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="weather-card">
+          <h3><span class="icon">🌫️</span> Atmosphere</h3>
+          <p id="humidity">Humidity: </p>
+          <p id="pressure">Pressure: </p>
+          <p id="visibility">Visibility: </p>
+          <p id="cloudiness">Cloudiness: </p>
+        </div>
+        <div class="weather-card">
+          <h3><span class="icon">💨</span> Wind</h3>
+          <p id="wind">Speed & Direction: </p>
+        </div>
+        <div class="weather-card">
+          <h3><span class="icon">☀️</span> Sun</h3>
+          <p id="sunrise">Sunrise: </p>
+          <p id="sunset">Sunset: </p>
+          <p id="dayLength">Day Length: </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
